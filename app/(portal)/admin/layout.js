@@ -1,5 +1,5 @@
 // import theme style scss file
-import '@/styles/theme.scss';
+import '@/utils/styles/theme.scss';
 
 export const metadata = {
     title: 'Dash UI - Next.Js Admin Dashboard Template',

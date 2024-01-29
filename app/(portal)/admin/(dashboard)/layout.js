@@ -1,8 +1,8 @@
 'use client'
 import { useState, useEffect } from 'react';
-import '@/styles/theme.scss';
-import NavbarVertical from '@/layouts/navbars/NavbarVertical';
-import NavbarTop from '@/layouts/navbars/NavbarTop';
+import '@/utils/styles/theme.scss';
+import NavbarVertical from '@/components/admin/layouts/navbars/NavbarVertical';
+import NavbarTop from '@/components/admin//layouts/navbars/NavbarTop';
 
 export default function DashboardLayout({ children }) {
   const [showMenu, setShowMenu] = useState(true);
@@ -21,7 +21,10 @@ export default function DashboardLayout({ children }) {
   return (
     <div id="db-wrapper">
       <div className="navbar-vertical navbar">
-        <NavbarVertical />
+      <NavbarVertical
+					showMenu={showMenu}
+					onClick={(value) => setShowMenu(value)}
+				/>
       </div>
       <div id="page-content">
         <div className="header">

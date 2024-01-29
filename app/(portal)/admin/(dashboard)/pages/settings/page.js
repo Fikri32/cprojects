@@ -3,10 +3,10 @@
 import { Container } from 'react-bootstrap';
 
 // import widget as custom components
-import { PageHeading } from 'widgets'
+import { PageHeading } from '@/widgets'
 
 // import sub components
-import { Notifications, DeleteAccount, GeneralSetting, EmailSetting, Preferences } from 'sub-components'
+import { Notifications, DeleteAccount, GeneralSetting, EmailSetting, Preferences } from '@/sub-components'
 
 const Settings = () => {
   return (

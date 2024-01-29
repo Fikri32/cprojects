@@ -5,7 +5,7 @@ import { Row, Col, Card, Form, Button, Image } from 'react-bootstrap';
 import Link from 'next/link';
 
 // import hooks
-import useMounted from 'hooks/useMounted';
+import useMounted from '@/utils/hooks/useMounted';
 
 const SignIn = () => {
   const hasMounted = useMounted();
@@ -17,7 +17,7 @@ const SignIn = () => {
           {/* Card body */}
           <Card.Body className="p-6">
             <div className="mb-4">
-              <Link href="/"><Image src="/images/brand/logo/logo-primary.svg" className="mb-2" alt="" /></Link>
+              <Link href="/"><Image src="/admin/images/brand/logo/logo-primary.svg" className="mb-2" alt="" /></Link>
               <p className="mb-6">Please enter your user information.</p>
             </div>
             {/* Form */}

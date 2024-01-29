@@ -5,15 +5,15 @@ import Link from 'next/link';
 import { Container, Col, Row } from 'react-bootstrap';
 
 // import widget/custom components
-import { StatRightTopIcon } from "@/widgets";
+import { StatRightTopIcon } from "@/components/admin/widgets";
 
 // import sub components
 import { ActiveProjects, Teams, 
     TasksPerformance 
-} from "@/sub-components";
+} from "@/components/admin/sub-components";
 
 // import required data files
-import ProjectsStatsData from "@/data/dashboard/ProjectsStatsData";
+import ProjectsStatsData from "@/utils/data/dashboard/ProjectsStatsData";
 
 const Home = () => {
     return (
